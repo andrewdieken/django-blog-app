@@ -1,0 +1,11 @@
+<!-- templates/post_detail.html -->
+{% extends 'base.html' %}
+
+<!-- Our DetailView defiend in 'blog/view.py' allows us to access title and body through 'post' -->
+
+{% block content %}
+  <div class="post-entry">
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.body }}</p>
+  </div>
+{% endblock content %}
